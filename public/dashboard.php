@@ -105,7 +105,7 @@
                     </div>
                     <div class="collapse navbar-collapse" id="sidebar-menu">
                         <ul class="navbar-nav pt-lg-3">
-                            <li class="nav-item">
+                            <li class="nav-item active">
                                 <a class="nav-link" href="./" >
                                     <span class="nav-link-icon d-md-none d-lg-inline-block">
                                         <!-- Download SVG icon from http://tabler-icons.io/i/home -->
@@ -124,26 +124,118 @@
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#navbar-base" data-bs-toggle="dropdown" data-bs-auto-close="false" role="button" aria-expanded="false" >
                                     <span class="nav-link-icon d-md-none d-lg-inline-block">
-                                        <!-- Download SVG icon from http://tabler-icons.io/i/package -->
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                                            <path d="M12 3l8 4.5l0 9l-8 4.5l-8 -4.5l0 -9l8 -4.5" />
-                                            <path d="M12 12l8 -4.5" />
-                                            <path d="M12 12l0 9" />
-                                            <path d="M12 12l-8 -4.5" />
-                                            <path d="M16 5.25l-8 4.5" />
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-device-desktop" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                            <path d="M3 4m0 1a1 1 0 0 1 1 -1h16a1 1 0 0 1 1 1v10a1 1 0 0 1 -1 1h-16a1 1 0 0 1 -1 -1z"></path>
+                                            <path d="M7 20l10 0"></path>
+                                            <path d="M9 16l0 4"></path>
+                                            <path d="M15 16l0 4"></path>
                                         </svg>
                                     </span>
                                     <span class="nav-link-title">
-                                    Interface
+                                    Assets
                                     </span>
                                 </a>
                                 <div class="dropdown-menu">
                                     <div class="dropdown-menu-columns">
                                         <div class="dropdown-menu-column">
-                                            <a class="dropdown-item" href="./empty.html">
-                                            Empty page
-                                            </a>
+                                            <a class="dropdown-item" href="#">List all</a>
+                                            <a class="dropdown-item" href="#">Deployed</a>
+                                            <a class="dropdown-item" href="#">Deployable</a>
+                                            <a class="dropdown-item" href="#">Un-deployable</a>
+                                            <a class="dropdown-item" href="#">Archived</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    <span class="nav-link-icon d-md-none d-lg-inline-block">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-license" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                            <path d="M15 21h-9a3 3 0 0 1 -3 -3v-1h10v2a2 2 0 0 0 4 0v-14a2 2 0 1 1 2 2h-2m2 -4h-11a3 3 0 0 0 -3 3v11"></path>
+                                            <path d="M9 7l4 0"></path>
+                                            <path d="M9 11l4 0"></path>
+                                        </svg>
+                                    </span>
+                                    <span class="nav-link-title">
+                                        Licenses
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    <span class="nav-link-icon d-md-none d-lg-inline-block">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-devices" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                            <path d="M13 8m0 1a1 1 0 0 1 1 -1h6a1 1 0 0 1 1 1v10a1 1 0 0 1 -1 1h-6a1 1 0 0 1 -1 -1z"></path>
+                                            <path d="M18 8v-3a1 1 0 0 0 -1 -1h-13a1 1 0 0 0 -1 1v12a1 1 0 0 0 1 1h9"></path>
+                                            <path d="M16 9l2 0"></path>
+                                        </svg>
+                                    </span>
+                                    <span class="nav-link-title">
+                                        Kits
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    <span class="nav-link-icon d-md-none d-lg-inline-block">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-users" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                            <path d="M9 7m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0"></path>
+                                            <path d="M3 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2"></path>
+                                            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                                            <path d="M21 21v-2a4 4 0 0 0 -3 -3.85"></path>
+                                        </svg>
+                                    </span>
+                                    <span class="nav-link-title">
+                                        People
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    <span class="nav-link-icon d-md-none d-lg-inline-block">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-question-mark" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                            <path d="M8 8a3.5 3 0 0 1 3.5 -3h1a3.5 3 0 0 1 3.5 3a3 3 0 0 1 -2 3a3 4 0 0 0 -2 4"></path>
+                                            <path d="M12 19l0 .01"></path>
+                                        </svg>
+                                    </span>
+                                    <span class="nav-link-title">
+                                        Requests
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#navbar-base" data-bs-toggle="dropdown" data-bs-auto-close="false" role="button" aria-expanded="false" >
+                                    <span class="nav-link-icon d-md-none d-lg-inline-block">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-device-desktop" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                            <path d="M3 4m0 1a1 1 0 0 1 1 -1h16a1 1 0 0 1 1 1v10a1 1 0 0 1 -1 1h-16a1 1 0 0 1 -1 -1z"></path>
+                                            <path d="M7 20l10 0"></path>
+                                            <path d="M9 16l0 4"></path>
+                                            <path d="M15 16l0 4"></path>
+                                        </svg>
+                                    </span>
+                                    <span class="nav-link-title">
+                                    Administration
+                                    </span>
+                                </a>
+                                <div class="dropdown-menu">
+                                    <div class="dropdown-menu-columns">
+                                        <div class="dropdown-menu-column">
+                                            <a class="dropdown-item" href="#">All Settings</a>
+                                            <a class="dropdown-item" href="#">Barcode Settings</a>
+                                            <a class="dropdown-item" href="#">Branding</a>
+                                            <a class="dropdown-item" href="#">General Settings</a>
+                                            <a class="dropdown-item" href="#">Integrations</a>
+                                            <a class="dropdown-item" href="#">Localization</a>
+                                            <a class="dropdown-item" href="#">Logs</a>
+                                            <a class="dropdown-item" href="#">Notifications</a>
+                                            <a class="dropdown-item" href="#">Security Settings</a>
+                                            <a class="dropdown-item" href="#">Users</a>
                                         </div>
                                     </div>
                                 </div>
