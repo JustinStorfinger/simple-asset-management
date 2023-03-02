@@ -4,7 +4,7 @@
         <meta charset="utf-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
         <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
-        <title>Dashboard :: Simple Asset Management</title>
+        <title>Assets :: Simple Asset Management</title>
         <!-- CSS files -->
         <link href="../assets/css/tabler.min.css?1674944402" rel="stylesheet"/>
         <link href="../assets/css/tabler-flags.min.css?1674944402" rel="stylesheet"/>
@@ -95,18 +95,18 @@
                                 </div>
                             </a>
                             <div class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
-                                <a href="#" class="dropdown-item">Assigned Assets</a>
+                                <a href="assets.php?action=listassigned&scope=jdoe" class="dropdown-item">Assigned Assets</a>
                                 <a href="./profile.html" class="dropdown-item">Profile</a>
                                 <div class="dropdown-divider"></div>
                                 <a href="./settings.html" class="dropdown-item">Administration</a>
-                                <a href="./sign-in.html" class="dropdown-item">Logout</a>
+                                <a href="auth.php?action=logout" class="dropdown-item">Logout</a>
                             </div>
                         </div>
                     </div>
                     <div class="collapse navbar-collapse" id="sidebar-menu">
                         <ul class="navbar-nav pt-lg-3">
-                            <li class="nav-item active">
-                                <a class="nav-link" href="./" >
+                            <li class="nav-item">
+                                <a class="nav-link" href="dashboard.php" >
                                     <span class="nav-link-icon d-md-none d-lg-inline-block">
                                         <!-- Download SVG icon from http://tabler-icons.io/i/home -->
                                         <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -121,8 +121,8 @@
                                     </span>
                                 </a>
                             </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#navbar-base" data-bs-toggle="dropdown" data-bs-auto-close="false" role="button" aria-expanded="false" >
+                            <li class="nav-item dropdown active">
+                                <a class="nav-link dropdown-toggle" href="#navbar-base" data-bs-toggle="dropdown" data-bs-auto-close="false" role="button" aria-expanded="true" >
                                     <span class="nav-link-icon d-md-none d-lg-inline-block">
                                         <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-device-desktop" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
                                             <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
@@ -319,11 +319,11 @@
                                 </div>
                             </a>
                             <div class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
-                                <a href="#" class="dropdown-item">Assigned Assets</a>
+                                <a href="assets.php?action=listassigned&scope=jdoe" class="dropdown-item">Assigned Assets</a>
                                 <a href="./profile.html" class="dropdown-item">Profile</a>
                                 <div class="dropdown-divider"></div>
                                 <a href="./settings.html" class="dropdown-item">Administration</a>
-                                <a href="./sign-in.html" class="dropdown-item">Logout</a>
+                                <a href="auth.php?action=logout" class="dropdown-item">Logout</a>
                             </div>
                         </div>
                     </div>
@@ -354,31 +354,24 @@
                             <div class="col">
                                 <!-- Page pre-title -->
                                 <div class="page-pretitle">
-                                    Dashboard
+                                    Assets
                                 </div>
                                 <h2 class="page-title">
-                                    Home
+                                    All assets
                                 </h2>
                             </div>
                             <!-- Page title actions -->
                             <div class="col-auto ms-auto d-print-none">
                                 <div class="btn-list">
-                                    <div class="dropdown">
-                                        <a href="#" class="btn btn-primary d-none d-sm-inline-block dropdown-toggle" data-bs-toggle="dropdown">
-                                            <!-- Download SVG icon from http://tabler-icons.io/i/plus -->
-                                            <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                                                <path d="M12 5l0 14" />
-                                                <path d="M5 12l14 0" />
-                                            </svg>
-                                            Create new
-                                        </a>
-                                        <div class="dropdown-menu">
-                                            <a class="dropdown-item">Asset</a>
-                                            <a class="dropdown-item">License</a>
-                                            <a class="dropdown-item">User</a>
-                                        </div>
-                                    </div>
+                                    <a href="#" class="btn btn-primary d-none d-sm-inline-block">
+                                        <!-- Download SVG icon from http://tabler-icons.io/i/plus -->
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                            <path d="M12 5l0 14" />
+                                            <path d="M5 12l14 0" />
+                                        </svg>
+                                        Create new asset
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -387,7 +380,7 @@
                 <!-- Page body -->
                 <div class="page-body">
                     <div class="container-xl">
-                        <span>ToDo: Stats, Recent Activites, Coming up events (License renew, warranty ending, ...)</span>
+                        <span>ToDo: All assets, deployed assets, undeployed assets, un deployable assets</span>
                     </div>
                 </div>
                 <footer class="footer footer-transparent d-print-none">
